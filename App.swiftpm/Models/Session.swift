@@ -5,7 +5,7 @@
 //  Created by Tsutomu Hayakawa on 2025/04/09.
 //
 
-struct Session: Decodable {
+struct Session: Decodable, Identifiable {
     let id: Int
     let title: String
     let place: String

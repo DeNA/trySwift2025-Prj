@@ -11,10 +11,14 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                timetableContent
-                Text("Hi Y'all :)")
-                Text("Uhooi !!")
-                Text("Hi Y'all :)")
+                if let day1Timetable {
+                    ForEach(day1Timetable.schedules) { schedule in
+                        ForEach(schedule.sessions) { session in
+                            Text(session.title)
+                        }
+                    }
+                }
+                
             }
             .toolbar {
                 ToolbarItem(placement: .navigation) {
