@@ -15,16 +15,15 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selectedDay) {
             ForEach(Array(zip(timetables.indices, timetables)), id: \.0) { index, timetable in
-                // TODO: Day1以外のタイムテーブルも表示したい
-                // TODO: Display a timetable other than day1
                 NavigationStack {
-                    // TODO: SessionをScheduleのdateでグループ分けしたいかも
-                    // TODO: Group the Session by Schedule's date
                     List {
                         ForEach(timetable.schedules) { schedule in
                             Section {
                                 ForEach(schedule.sessions) { session in
-                                    Text(session.title)
+                                    NavigationLink(session.title) {
+                                        // TODO: Sessionの詳細画面をファイル分割作る
+                                        Text("hoge")
+                                    }
                                     // TODO: Sessionの詳細画面に遷移したい
                                     // TODO: Transition to the details screen of session
                                 }
