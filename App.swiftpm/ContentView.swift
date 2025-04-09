@@ -1,15 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State
-    var isLicensesPresented: Bool = false
-
-//    @State var day1Timetable: Timetable?
-//    @State var day2Timetable: Timetable?
-//    @State var day3Timetable: Timetable?
-    
+    @State private var isLicensesPresented: Bool = false
     @State private var timetables: [Timetable] = []
-//
     @State private var selectedDay = 0
 
     var body: some View {
@@ -24,12 +17,9 @@ struct ContentView: View {
                                         // TODO: Sessionの詳細画面をファイル分割作る
                                         Text("hoge")
                                     }
-                                    // TODO: Sessionの詳細画面に遷移したい
-                                    // TODO: Transition to the details screen of session
                                 }
                                 
                             } header: {
-                                // TODO: format
                                 Text(schedule.formattedDate)
                                 
                                 // TODO: セッションのステータスを表示する（開始前・セッション中・終了済み）
@@ -74,12 +64,6 @@ struct ContentView: View {
             self.timetables = timetables
         }
     }
-    
-//    var timetableContent: some View {
-//        Section(day1Timetable?.title ?? "Nil") {
-//            Text("Write Code Please !!")
-//        }
-//    }
     
     var licenseButton: some View {
         Button {
