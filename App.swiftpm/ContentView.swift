@@ -10,6 +10,7 @@ struct ContentView: View {
             List {
                 timetableContent
                 Text("Hi Y'all :)")
+                Text("Uhooi !!")
             }
             .toolbar {
                 ToolbarItem(placement: .navigation) {
