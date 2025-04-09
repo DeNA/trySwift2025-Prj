@@ -29,33 +29,19 @@ struct ContentView: View {
         }
         .onAppear {
             let decoder = JSONDecoder()
-            day1Timetable = try? decoder.decode(
+            day1Timetable = try! decoder.decode(
                 Timetable.self,
                 from: Data(
-                    contentsOf: Bundle.main
-                        .url(
-                            forResource: "2025-day1",
-                            withExtension: "json"
-                        )!
+                    contentsOf: Bundle.main.url(forResource: "2025-day1", withExtension: "json")!
                 )
             )
         }
     }
     
     var timetableContent: some View {
-        Section {
+        Section(day1Timetable?.title ?? "Nil") {
             Text("TBD")
-        } header: {
-            let url = Bundle.main.url(forResource: "2025-day1", withExtension: "json")!
-            let data = try! Data(contentsOf: url)
-            struct Timetable: Codable {
-                let id: Int
-                let title: String
-            }
-            let timetable = try! JSONDecoder().decode(Timetable.self, from: data)
-            return Text(timetable.title)
         }
-
     }
     
     var licenseButton: some View {

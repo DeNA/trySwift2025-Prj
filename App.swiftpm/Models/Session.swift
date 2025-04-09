@@ -9,5 +9,5 @@ struct Session: Decodable {
     let id: Int
     let title: String
     let place: String
-    let summary: String
+    let summary: String?
 }
