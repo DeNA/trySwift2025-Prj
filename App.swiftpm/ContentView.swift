@@ -4,10 +4,12 @@ struct ContentView: View {
     @State
     var isLicensesPresented: Bool = false
     
+    
     var body: some View {
         NavigationStack {
             List {
                 timetableContent
+                Text("Hi Y'all :)")
             }
             .toolbar {
                 ToolbarItem(placement: .navigation) {
