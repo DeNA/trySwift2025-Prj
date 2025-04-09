@@ -33,7 +33,8 @@ struct ContentView: View {
                                 // TODO: format
                                 Text(schedule.formattedDate)
                                 
-                                // TODO: セッションが始まる前・セッション中・終了済みを表示する
+                                // TODO: セッションのステータスを表示する（開始前・セッション中・終了済み）
+                                // TODO: Render the state of the session (preparing, ongoing and finished)
                             }
                         }
                     }
