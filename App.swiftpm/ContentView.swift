@@ -31,7 +31,7 @@ struct ContentView: View {
                                 
                             } header: {
                                 // TODO: format
-                                Text(schedule.time)
+                                Text(schedule.formattedDate)
                                 
                                 // TODO: セッションが始まる前・セッション中・終了済みを表示する
                             }
