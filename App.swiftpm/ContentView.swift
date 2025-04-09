@@ -22,10 +22,18 @@ struct ContentView: View {
                     // TODO: Group the Session by Schedule's date
                     List {
                         ForEach(timetable.schedules) { schedule in
-                            ForEach(schedule.sessions) { session in
-                                Text(session.title)
-                                // TODO: Sessionの詳細画面に遷移したい
-                                // TODO: Transition to the details screen of session
+                            Section {
+                                ForEach(schedule.sessions) { session in
+                                    Text(session.title)
+                                    // TODO: Sessionの詳細画面に遷移したい
+                                    // TODO: Transition to the details screen of session
+                                }
+                                
+                            } header: {
+                                // TODO: format
+                                Text(schedule.time)
+                                
+                                // TODO: セッションが始まる前・セッション中・終了済みを表示する
                             }
                         }
                     }
