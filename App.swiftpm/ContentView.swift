@@ -4,6 +4,14 @@ struct ContentView: View {
     @State
     var isLicensesPresented: Bool = false
     
+    @State
+    var day1Timetable: Timetable?
+    
+    @State
+    var day2Timetable: Timetable?
+    
+    @State
+    var day3Timetable: Timetable?
     
     var body: some View {
         NavigationStack {
@@ -11,6 +19,7 @@ struct ContentView: View {
                 timetableContent
                 Text("Hi Y'all :)")
                 Text("Uhooi !!")
+                Text("Hi Y'all :)")
             }
             .toolbar {
                 ToolbarItem(placement: .navigation) {
@@ -22,6 +31,19 @@ struct ContentView: View {
             NavigationStack(root: {
                 LicenseListView()
             })
+        }
+        .onAppear {
+            let decoder = JSONDecoder()
+            day1Timetable = try? decoder.decode(
+                Timetable.self,
+                from: Data(
+                    contentsOf: Bundle.main
+                        .url(
+                            forResource: "2025-day1",
+                            withExtension: "json"
+                        )!
+                )
+            )
         }
     }
     
