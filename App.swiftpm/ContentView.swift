@@ -3,16 +3,11 @@ import SwiftUI
 struct ContentView: View {
     @State
     var isLicensesPresented: Bool = false
-    
-    @State
-    var day1Timetable: Timetable?
-    
-    @State
-    var day2Timetable: Timetable?
-    
-    @State
-    var day3Timetable: Timetable?
-    
+
+    @State var day1Timetable: Timetable?
+    @State var day2Timetable: Timetable?
+    @State var day3Timetable: Timetable?
+
     var body: some View {
         NavigationStack {
             List {
