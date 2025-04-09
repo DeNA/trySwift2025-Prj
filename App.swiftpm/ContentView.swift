@@ -40,7 +40,7 @@ struct ContentView: View {
     
     var timetableContent: some View {
         Section(day1Timetable?.title ?? "Nil") {
-            Text("TBD")
+            Text("Write Code Please !!")
         }
     }
     
