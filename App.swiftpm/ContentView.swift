@@ -4,25 +4,39 @@ struct ContentView: View {
     @State
     var isLicensesPresented: Bool = false
 
-    @State var day1Timetable: Timetable?
-    @State var day2Timetable: Timetable?
-    @State var day3Timetable: Timetable?
+//    @State var day1Timetable: Timetable?
+//    @State var day2Timetable: Timetable?
+//    @State var day3Timetable: Timetable?
+    
+    @State private var timetables: [Timetable] = []
+//
+    @State private var selectedDay = 0
 
     var body: some View {
-        NavigationStack {
-            List {
-                if let day1Timetable {
-                    ForEach(day1Timetable.schedules) { schedule in
-                        ForEach(schedule.sessions) { session in
-                            Text(session.title)
+        TabView(selection: $selectedDay) {
+            ForEach(Array(zip(timetables.indices, timetables)), id: \.0) { index, timetable in
+                // TODO: Day1以外のタイムテーブルも表示したい
+                // TODO: Display a timetable other than day1
+                NavigationStack {
+                    // TODO: SessionをScheduleのdateでグループ分けしたいかも
+                    // TODO: Group the Session by Schedule's date
+                    List {
+                        ForEach(timetable.schedules) { schedule in
+                            ForEach(schedule.sessions) { session in
+                                Text(session.title)
+                                // TODO: Sessionの詳細画面に遷移したい
+                                // TODO: Transition to the details screen of session
+                            }
+                        }
+                    }
+                    .toolbar {
+                        ToolbarItem(placement: .navigation) {
+                            licenseButton
                         }
                     }
                 }
-                
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigation) {
-                    licenseButton
+                .tabItem {
+                    Label(timetable.title, systemImage: "\(index + 1).circle.fill")
                 }
             }
         }
@@ -32,21 +46,32 @@ struct ContentView: View {
             })
         }
         .onAppear {
+            var timetables: [Timetable] = []
             let decoder = JSONDecoder()
-            day1Timetable = try! decoder.decode(
-                Timetable.self,
-                from: Data(
-                    contentsOf: Bundle.main.url(forResource: "2025-day1", withExtension: "json")!
-                )
-            )
+            
+            for day in 1...3 {
+                do {
+                    let timetable = try decoder.decode(
+                        Timetable.self,
+                        from: Data(
+                            contentsOf: Bundle.main.url(forResource: "2025-day\(day)", withExtension: "json")!
+                        )
+                    )
+                    timetables.append(timetable)
+                } catch {
+                    //
+                }
+            }
+            
+            self.timetables = timetables
         }
     }
     
-    var timetableContent: some View {
-        Section(day1Timetable?.title ?? "Nil") {
-            Text("Write Code Please !!")
-        }
-    }
+//    var timetableContent: some View {
+//        Section(day1Timetable?.title ?? "Nil") {
+//            Text("Write Code Please !!")
+//        }
+//    }
     
     var licenseButton: some View {
         Button {
