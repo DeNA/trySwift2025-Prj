@@ -18,6 +18,11 @@ struct SessionDetailView: View {
             }
             
             HStack {
+                Text("登壇者:").padding()
+                Text(session.speakers?.first?.name ?? "なし")
+            }
+            
+            HStack {
                 Text("会場:").padding()
                 Text(session.place)
             }

@@ -13,6 +13,8 @@ struct ContentView: View {
                         ForEach(timetable.schedules) { schedule in
                             Section {
                                 ForEach(schedule.sessions) { session in
+                                    // TODO: Speaker名も出したい
+                                    // TODO: Show speaker name
                                     NavigationLink(session.title) {
                                         // TODO: Sessionの詳細画面をファイル分割作る
                                         SessionDetailView(session: session)
@@ -58,6 +60,7 @@ struct ContentView: View {
                     timetables.append(timetable)
                 } catch {
                     //
+                    print("Error: \(error)")
                 }
             }
             

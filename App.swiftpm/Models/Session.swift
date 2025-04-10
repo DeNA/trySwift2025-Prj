@@ -10,4 +10,5 @@ struct Session: Decodable, Identifiable {
     let title: String
     let place: String
     let summary: String?
+    let speakers: [Speaker]?
 }
