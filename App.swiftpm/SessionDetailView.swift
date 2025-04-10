@@ -19,13 +19,14 @@ struct SessionDetailView: View {
             HStack {
                 Text("登壇者:").padding()
                 Text(session.speakers?.first?.name ?? "なし")
+                // Please add Job-Title
             }
             
             HStack {
                 Text("会場:").padding()
                 Text(session.place)
             }
-            
+            // TODO:概要のデータを出したいよね
             if #available(iOS 17.0, *) {
                 if let summary = session.summary {
                     Text("概要:").padding()
