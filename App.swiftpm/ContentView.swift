@@ -13,7 +13,6 @@ struct ContentView: View {
                         ForEach(timetable.schedules) { schedule in
                             Section {
                                 ForEach(schedule.sessions) { session in
-                                    // TODO: Speaker名も出したい
                                     // TODO: Show speaker name
                                     // FIXME: 20250410 13:10 のセッションが複数表示されている
                                     NavigationLink {
