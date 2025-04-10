@@ -13,9 +13,7 @@ struct ContentView: View {
                         ForEach(timetable.schedules) { schedule in
                             Section {
                                 ForEach(schedule.sessions) { session in
-                                    // TODO: Show speaker name
                                     NavigationLink {
-                                        // TODO: Sessionの詳細画面をファイル分割作る
                                         SessionDetailView(session: session)
                                     } label: {
                                         VStack(alignment: .leading) {
@@ -33,9 +31,10 @@ struct ContentView: View {
                                 }
                                 
                             } header: {
-                                Text(schedule.formattedDate)
-                                // TODO: セッションのステータスを表示する（開始前・セッション中・終了済み）
-                                // TODO: Render the state of the session (preparing, ongoing and finished)
+                                HStack {
+                                    Text(schedule.formattedDate)
+                                    Text(timetable.getSessionStatus(for: schedule.id)?.description ?? "")
+                                }
                             }
                         }
                     }

@@ -31,7 +31,6 @@ struct SessionDetailView: View {
                 
                 Spacer()
             }
-            // TODO:概要のデータを出したいよね
             if #available(iOS 17.0, *) {
                 if let summary = session.summary {
                     Text("概要:").padding()
