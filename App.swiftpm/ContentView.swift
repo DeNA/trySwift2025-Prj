@@ -15,9 +15,18 @@ struct ContentView: View {
                                 ForEach(schedule.sessions) { session in
                                     // TODO: Speaker名も出したい
                                     // TODO: Show speaker name
-                                    NavigationLink(session.title) {
+                                    NavigationLink {
                                         // TODO: Sessionの詳細画面をファイル分割作る
                                         SessionDetailView(session: session)
+                                    } label: {
+                                        VStack(alignment: .leading) {
+                                            Text(session.title)
+                                            if let speakerName = session.speakers?.first?.name {
+                                                Text(speakerName)
+                                            }
+                                            
+                                        }
+                                        
                                     }
                                 }
                                 
