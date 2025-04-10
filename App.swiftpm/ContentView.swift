@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isLicensesPresented: Bool = false
+    @State var isLicensesPresented: Bool = false
     @State private var timetables: [Timetable] = []
     @State private var selectedDay = 0
 
@@ -15,7 +15,7 @@ struct ContentView: View {
                                 ForEach(schedule.sessions) { session in
                                     NavigationLink(session.title) {
                                         // TODO: Sessionの詳細画面をファイル分割作る
-                                        Text("hoge")
+                                        SessionDetailView(session: session)
                                     }
                                 }
                                 
