@@ -14,7 +14,6 @@ struct ContentView: View {
                             Section {
                                 ForEach(schedule.sessions) { session in
                                     // TODO: Show speaker name
-                                    // FIXME: 20250410 13:10 のセッションが複数表示されている
                                     NavigationLink {
                                         // TODO: Sessionの詳細画面をファイル分割作る
                                         SessionDetailView(session: session)
