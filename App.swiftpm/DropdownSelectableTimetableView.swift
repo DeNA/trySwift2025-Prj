@@ -11,6 +11,7 @@ struct TimetableListItem: View {
     let session: Session
 
     var body: some View {
+        // FIXME: タイムテーブルの中身が表示されません。
         VStack(alignment: .leading) {
 //            Text(session.title)
 //                .font(.headline)
@@ -62,6 +63,7 @@ struct DropdownSelectableTimetableView: View {
     }
     
     var body: some View {
+        // FIXME:アプリ起動時の選択が行われていない。
         NavigationStack {
             TimetableList(timetable: selectedDayTimetable)
             .onAppear {

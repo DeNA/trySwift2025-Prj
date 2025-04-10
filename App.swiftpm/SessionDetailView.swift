@@ -19,6 +19,7 @@ struct SessionDetailView: View {
                     .multilineTextAlignment(.leading)
 
                 VStack(alignment: .leading, spacing: 4) {
+                    // TODO: Speakerのアイコン画像を出して欲しい
                     if let speakers = session.speakers {
                         Text(speakers.compactMap(\.name).joined(separator: ", ") ?? "なし")
                                 .font(.title2.bold())
