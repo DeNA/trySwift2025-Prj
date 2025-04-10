@@ -37,6 +37,10 @@ struct SessionDetailView: View {
                     Text("概要:").padding()
                     Text(summary)
                         .padding(.horizontal, 16.0)
+                } else if let description = session.description {
+                    Text("概要:").padding()
+                    Text(description)
+                        .padding(.horizontal, 16.0)
                 } else {
                     ContentUnavailableView {
                         Label("概要なし", systemImage: "exclamationmark.bubble.fill")
