@@ -14,54 +14,54 @@ struct SessionDetailView: View {
         ScrollView {
             VStack(alignment: .leading) {
                 Text(session.title)
-                    .font(.title)
+                    .font(.title.bold())
                     .padding()
                     .multilineTextAlignment(.leading)
-                
-                HStack {
-                    Text("登壇者:").padding()
-                    Text(session.speakers?.compactMap(\.name).joined(separator: ", ") ?? "なし")
-                    Spacer()
-                }
-                
-                // TODO: UIをきれいにしてください！！
-                if let speakers = session.speakers {
-                    HStack {
-                        Text("登壇者の概要:")
-                        
-                        Text(speakers.compactMap(\.bio).joined(separator: "\n"))
-                    }
-                }
-                
-                if let speakers = session.speakers {
-                    HStack(spacing: 8) {
-                        Text("職業")
+
+                VStack(alignment: .leading, spacing: 4) {
+                    if let speakers = session.speakers {
+                        Text(speakers.compactMap(\.name).joined(separator: ", ") ?? "なし")
+                                .font(.title2.bold())
                         Text(speakers.compactMap(\.jobTitle).joined(separator: ", "))
                     }
                 }
+                .padding(8)
                 
-                HStack {
-                    Text("会場:").padding()
+                // TODO: UIをきれいにしてください！！
+                if let speakers = session.speakers {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(speakers.compactMap(\.bio).joined(separator: "\n"))
+                    }
+                    .padding(8)
+                }
+                
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("会場:")
+                        .font(.headline)
                     Text(session.place)
                     
                     Spacer()
                 }
+                .padding(8)
                 if #available(iOS 17.0, *) {
-                    if let summary = session.summary {
-                        Text("概要:").padding()
-                        Text(summary)
-                            .padding(.horizontal, 16.0)
-                    } else if let description = session.description {
-                        Text("概要:").padding()
-                        Text(description)
-                            .padding(.horizontal, 16.0)
-                    } else {
-                        ContentUnavailableView {
-                            Label("概要なし", systemImage: "exclamationmark.bubble.fill")
-                        } description: {
-                            Text("このセッションには概要がありません")
+                    Group {
+                        if let summary = session.summary {
+                            Text("概要:")
+                                .font(.headline)
+                            Text(summary)
+                        } else if let description = session.description {
+                            Text("概要:")
+                                .font(.headline)
+                            Text(description)
+                        } else {
+                            ContentUnavailableView {
+                                Label("概要なし", systemImage: "exclamationmark.bubble.fill")
+                            } description: {
+                                Text("このセッションには概要がありません")
+                            }
                         }
-                    }
+                    }.padding(.horizontal, 8)
                     
                 } else {
                     HStack {
