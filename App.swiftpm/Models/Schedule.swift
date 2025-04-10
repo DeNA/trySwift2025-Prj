@@ -15,12 +15,21 @@ struct Schedule: Decodable, Identifiable {
 }
 
 extension Schedule {
-    var formattedDate: String {
+    var date: Date? {
         let RFC3339DateFormatter = DateFormatter()
         RFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
         RFC3339DateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-        guard let date = RFC3339DateFormatter.date(from: time) else { return "Invalid Date" }
+        return RFC3339DateFormatter.date(from: time)
+    }
+    
+    var formattedDate: String {
+        guard let date else { return "Invalid Date" }
         
         return date.formatted()
+    }
+    
+    var hasEnded: Bool {
+        guard let date else { return false }
+        return Date.now > date
     }
 }

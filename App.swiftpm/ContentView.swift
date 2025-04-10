@@ -21,11 +21,14 @@ struct ContentView: View {
                                     } label: {
                                         VStack(alignment: .leading) {
                                             Text(session.title)
+                                                .font(.headline)
                                             if let speakerName = session.speakers?.first?.name {
-                                                Text(speakerName)
+                                                Text("by \(speakerName)")
+                                                    .font(.subheadline.italic())
                                             }
                                             
                                         }
+                                        .opacity(schedule.hasEnded ? 0.5 : 1)
                                         
                                     }
                                 }
