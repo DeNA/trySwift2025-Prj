@@ -40,7 +40,7 @@
             {
               "id": 5,
               "name": "Vincent Pradeilles",
-              "image_name": "vincent_pradeilles",
+              "image_url": "https://tryswift.jp/images/from_app/vincent_pradeilles.png",
               "bio": "Vincent works at Photoroom and contributes to building great consumer apps. He also enjoys sharing about Swift and iOS on his YouTube channel.",
               "job_title": "Software Engineer at Photoroom",
               "links": [
@@ -67,7 +67,7 @@
             {
               "id": 7,
               "name": "Sugiy",
-              "image_name": "sugiy",
+              "image_url": "https://tryswift.jp/images/from_app/sugiy.png",
               "bio": "- iOS and Flutter engineer in Japan\n- Working in DeNA Co., Ltd.\n- Often participate in [Japan-\\\\(region).swift](https://japan-region-swift.github.io/Japan-region-swift/) events in Japan.\n- Spoke at conferences in Japan such as [iOSDC](https://iosdc.jp/2024/) from 2022 to 2024 and [FlutterKaigi2024](https://youtu.be/UwDqyVawLtA?si=E0kN98o9CdM_p8e6).\n- I like cooking, fish, Japanese food, and pineapples.",
               "job_title": "iOS/Flutter Developer at DeNA Co., Ltd.",
               "links": [
@@ -88,7 +88,7 @@
             {
               "id": 5,
               "name": "Vincent Pradeilles",
-              "image_name": "vincent_pradeilles",
+              "image_url": "https://tryswift.jp/images/from_app/vincent_pradeilles.png",
               "bio": "Vincent works at Photoroom and contributes to building great consumer apps. He also enjoys sharing about Swift and iOS on his YouTube channel.",
               "job_title": "Software Engineer at Photoroom",
               "links": [
@@ -115,7 +115,7 @@
             {
               "id": 9,
               "name": "Sophie Hudson",
-              "image_name": "sophie_hudson",
+              "image_url": "https://tryswift.jp/images/from_app/sophie_hudson.png",
               "bio": "Most people know my dad, Paul, but I've been building apps with SwiftUI for three years now and want to share what I've learned. I like manga, go karting, and coding, but I spend most of my time looking after my dogs.",
               "job_title": "Hudson Heavy Industries",
               "links": [
@@ -154,7 +154,7 @@
             {
               "id": 13,
               "name": "Sebastiaan de With",
-              "image_name": "sebastiaan_de_with",
+              "image_url": "https://tryswift.jp/images/from_app/sebastiaan_de_with.png",
               "bio": "Sebastiaan is an ex-Apple designer now making camera apps like Halide, Kino and Spectre at Lux",
               "job_title": "Co-founder / designer at Lux Optics",
               "links": [
@@ -175,7 +175,7 @@
             {
               "id": 9,
               "name": "Sophie Hudson",
-              "image_name": "sophie_hudson",
+              "image_url": "https://tryswift.jp/images/from_app/sophie_hudson.png",
               "bio": "Most people know my dad, Paul, but I've been building apps with SwiftUI for three years now and want to share what I've learned. I like manga, go karting, and coding, but I spend most of my time looking after my dogs.",
               "job_title": "Hudson Heavy Industries",
               "links": [
@@ -202,7 +202,7 @@
             {
               "id": 15,
               "name": "Akihiko Sato",
-              "image_name": "akihiko_sato",
+              "image_url": "https://tryswift.jp/images/from_app/akihiko_sato.png",
               "bio": "Software Engineer at DeNA Inc., specializing in mobile development for live streaming applications. With extensive experience in iOS development since the Objective-C era, I am passionate about leveraging Swift’s evolution to create innovative and efficient applications.",
               "job_title": "Software Engineer at DeNA Inc.",
               "links": [
@@ -223,7 +223,7 @@
             {
               "id": 13,
               "name": "Sebastiaan de With",
-              "image_name": "sebastiaan_de_with",
+              "image_url": "https://tryswift.jp/images/from_app/sebastiaan_de_with.png",
               "bio": "Sebastiaan is an ex-Apple designer now making camera apps like Halide, Kino and Spectre at Lux",
               "job_title": "Co-founder / designer at Lux Optics",
               "links": [
@@ -250,7 +250,7 @@
             {
               "id": 17,
               "name": "Halordain",
-              "image_name": "halordain",
+              "image_url": "https://tryswift.jp/images/from_app/halordain.png",
               "bio": "I’m Chris, also known as Halordain! I grew up in Dallas, Texas, and attended college at Stanford. I majored in electrical engineering with a specialization in image processing. I started studying Japanese to scout my opponents from Japan at the Pokémon World Championships, where my quarterfinals and semifinals opponents hailed from Yokosuka and Fujisawa, respectively.\n\nMy journey led me to Doshisha University to master Japanese under the Critical Language Scholarship. I abandoned my PhD at MIT CSAIL to pursue software development in Japan. Originally hired at Creatures Japan to process images for Pokémon cards, I ended up learning Objective-C to develop my first iPad app, [Pokédex for iOS (Creatures, 2012)](https://www.pokemon.co.jp/ex/pokedex/ja/).\n\nAfter Creatures, I contracted with Bandai-Namco Studios to build the graphics engine behind [Super Smash Bros. for 3DS](https://www.smashbros.com/wiiu-3ds/us/3ds/). I parlayed my rendering knowledge in computer graphics, my image processing background, and my interest in iOS development into developing iOS Photoshop for Adobe, and eventually joined Apple to document their new graphics technologies such as Metal, ARKit, CreateML, and RealityKit.\n\nI returned to Japan to help spearhead Nintendo of Japan’s smartphone game design, starting with Fire Emblem Heroes and [Pikmin Bloom](https://pikminbloom.com/ja/). These development experiences led me to craft my own path creating educational apps and experiences for teaching Japanese kids about AI and Swift.",
               "job_title": "CEO @ Honmon",
               "links": [
@@ -289,7 +289,7 @@
             {
               "id": 21,
               "name": "Paul Hudson",
-              "image_name": "paul_hudson",
+              "image_url": "https://tryswift.jp/images/from_app/paul_hudson.png",
               "bio": "Paul is the author of Hacking with Swift, Pro Swift, Swift Design Patterns, Testing Swift, Swift Interview Challenges, and more. Suffice it to say, he quite likes Swift. And coffee. (But mostly Swift.) (And coffee.)",
               "job_title": "Creator at Hacking with Swift",
               "links": [
@@ -314,7 +314,7 @@
             {
               "id": 17,
               "name": "Halordain",
-              "image_name": "halordain",
+              "image_url": "https://tryswift.jp/images/from_app/halordain.png",
               "bio": "I’m Chris, also known as Halordain! I grew up in Dallas, Texas, and attended college at Stanford. I majored in electrical engineering with a specialization in image processing. I started studying Japanese to scout my opponents from Japan at the Pokémon World Championships, where my quarterfinals and semifinals opponents hailed from Yokosuka and Fujisawa, respectively.\n\nMy journey led me to Doshisha University to master Japanese under the Critical Language Scholarship. I abandoned my PhD at MIT CSAIL to pursue software development in Japan. Originally hired at Creatures Japan to process images for Pokémon cards, I ended up learning Objective-C to develop my first iPad app, [Pokédex for iOS (Creatures, 2012)](https://www.pokemon.co.jp/ex/pokedex/ja/).\n\nAfter Creatures, I contracted with Bandai-Namco Studios to build the graphics engine behind [Super Smash Bros. for 3DS](https://www.smashbros.com/wiiu-3ds/us/3ds/). I parlayed my rendering knowledge in computer graphics, my image processing background, and my interest in iOS development into developing iOS Photoshop for Adobe, and eventually joined Apple to document their new graphics technologies such as Metal, ARKit, CreateML, and RealityKit.\n\nI returned to Japan to help spearhead Nintendo of Japan’s smartphone game design, starting with Fire Emblem Heroes and [Pikmin Bloom](https://pikminbloom.com/ja/). These development experiences led me to craft my own path creating educational apps and experiences for teaching Japanese kids about AI and Swift.",
               "job_title": "CEO @ Honmon",
               "links": [
@@ -341,7 +341,7 @@
             {
               "id": 23,
               "name": "Ryo Yamashita",
-              "image_name": "ryo_yamashita",
+              "image_url": "https://tryswift.jp/images/from_app/ryo_yamashita.png",
               "bio": "I’m an Individual developer.\n\nI’ve released a variety of apps for Apple platforms.\niOS & iPadOS: 7 apps\nvisionOS: 5 apps\nwatchOS: 5 apps\ntvOS: 1 app\nmacOS: 3 apps\n\nPortfolio link \n[flipbyblink.github.io/Portfolio](https://flipbyblink.github.io/Portfolio/)",
               "job_title": "Solo Developer for iOS, watchOS, macOS, and visionOS",
               "links": [
@@ -362,7 +362,7 @@
             {
               "id": 21,
               "name": "Paul Hudson",
-              "image_name": "paul_hudson",
+              "image_url": "https://tryswift.jp/images/from_app/paul_hudson.png",
               "bio": "Paul is the author of Hacking with Swift, Pro Swift, Swift Design Patterns, Testing Swift, Swift Interview Challenges, and more. Suffice it to say, he quite likes Swift. And coffee. (But mostly Swift.) (And coffee.)",
               "job_title": "Creator at Hacking with Swift",
               "links": [
@@ -405,7 +405,7 @@
             {
               "id": 27,
               "name": "Benjamin Sandofsky",
-              "image_name": "benjamin_sandofsky",
+              "image_url": "https://tryswift.jp/images/from_app/benjamin_sandofsky.png",
               "bio": "Escaped big-tech to build photography and video apps. Credits: Halide, Kino and Spectre.",
               "job_title": "Co-founder / engineer at Lux Optics",
               "links": [
@@ -426,7 +426,7 @@
             {
               "id": 23,
               "name": "Ryo Yamashita",
-              "image_name": "ryo_yamashita",
+              "image_url": "https://tryswift.jp/images/from_app/ryo_yamashita.png",
               "bio": "I’m an Individual developer.\n\nI’ve released a variety of apps for Apple platforms.\niOS & iPadOS: 7 apps\nvisionOS: 5 apps\nwatchOS: 5 apps\ntvOS: 1 app\nmacOS: 3 apps\n\nPortfolio link \n[flipbyblink.github.io/Portfolio](https://flipbyblink.github.io/Portfolio/)",
               "job_title": "Solo Developer for iOS, watchOS, macOS, and visionOS",
               "links": [
@@ -453,7 +453,7 @@
             {
               "id": 29,
               "name": "Kazuya Ueoka",
-              "image_name": "fromkk",
+              "image_url": "https://tryswift.jp/images/from_app/fromkk.png",
               "bio": "iOS app developer, creating personal projects like #Type, Quiz Match, and more.\nLiving in Tokorozawa, Saitama, in a renovated pre-owned apartment with my wife and two cats.\nPhotography enthusiast, traveling across Japan as a photographer for Japan-\\\\(region).swift.",
               "job_title": "iOS Developer",
               "links": [
@@ -474,7 +474,7 @@
             {
               "id": 27,
               "name": "Benjamin Sandofsky",
-              "image_name": "benjamin_sandofsky",
+              "image_url": "https://tryswift.jp/images/from_app/benjamin_sandofsky.png",
               "bio": "Escaped big-tech to build photography and video apps. Credits: Halide, Kino and Spectre.",
               "job_title": "Co-founder / engineer at Lux Optics",
               "links": [
@@ -501,7 +501,7 @@
             {
               "id": 31,
               "name": "Noah Martin",
-              "image_name": "noah_martin",
+              "image_url": "https://tryswift.jp/images/from_app/noah_martin.png",
               "bio": "Noah is a software engineer from Los Angeles. He co-founded Emerge Tools in 2020 after spending 5 years working on Airbnb's iOS app and backend. He's passionate about mobile developer tools that reduce the complexity of apps and make them faster. Outside of building dev tools, he researches systems for machine learning as a PhD student. When he's not staring at a screen, Noah can be found in the water perfecting his strokes or on the trail working through a list of mountain peaks.",
               "job_title": "Co-founder of Emerge Tools",
               "links": [
@@ -536,7 +536,7 @@
             {
               "id": 31,
               "name": "Noah Martin",
-              "image_name": "noah_martin",
+              "image_url": "https://tryswift.jp/images/from_app/noah_martin.png",
               "bio": "Noah is a software engineer from Los Angeles. He co-founded Emerge Tools in 2020 after spending 5 years working on Airbnb's iOS app and backend. He's passionate about mobile developer tools that reduce the complexity of apps and make them faster. Outside of building dev tools, he researches systems for machine learning as a PhD student. When he's not staring at a screen, Noah can be found in the water perfecting his strokes or on the trail working through a list of mountain peaks.",
               "job_title": "Co-founder of Emerge Tools",
               "links": [

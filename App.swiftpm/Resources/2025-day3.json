@@ -40,7 +40,7 @@
             {
               "id": 73,
               "name": "Nick Lockwood",
-              "image_name": "nick_lockwood",
+              "image_url": "https://tryswift.jp/images/from_app/nick_lockwood.png",
               "bio": "Nick is a veteran developer, author and open source aficionado, and has been developing iOS apps since the dark ages of manual memory management back in 2009. He is known for various open source projects such as SwiftFormat, Euclid, Expression and iCarousel. When Nick isn't writing parsers in (and for) Swift, he likes to tinker with 3D graphics and even sometimes fancies himself as a games developer.",
               "job_title": "iOS Developer at Bloomberg",
               "links": [
@@ -71,7 +71,7 @@
             {
               "id": 75,
               "name": "Ryota Motonishi",
-              "image_name": "ryota_motonishi",
+              "image_url": "https://tryswift.jp/images/from_app/ryota_motonishi.png",
               "bio": "Ryota Motonishi is an iOS engineer at LY Corporation. He is working on the development of the LINE chat app. In his free time, he enjoys singing karaoke.",
               "job_title": "iOS Developer at LY Corporation",
               "links": []
@@ -87,7 +87,7 @@
             {
               "id": 73,
               "name": "Nick Lockwood",
-              "image_name": "nick_lockwood"
+              "image_url": "https://tryswift.jp/images/from_app/nick_lockwood.png"
             }
           ]
         }
@@ -106,7 +106,7 @@
             {
               "id": 77,
               "name": "Yoshimasa Niwa",
-              "image_name": "yoshimasa_niwa",
+              "image_url": "https://tryswift.jp/images/from_app/yoshimasa_niwa.png",
               "bio": "As a software engineer, I divide my time between working on client applications, backend services, and occasionally indulging in watching cat videos and photos. I have led engineering teams and cats to deliver user-facing products with a special focus on usability, customer satisfaction, and meowing.",
               "job_title": "Software Engineer",
               "links": [
@@ -145,7 +145,7 @@
             {
               "id": 8,
               "name": "Gui Rambo",
-              "image_name": "gui_rambo",
+              "image_url": "https://tryswift.jp/images/from_app/gui_rambo.png",
               "bio": "Gui Rambo is a Mac developer and security researcher from Brazil, known for apps such as AirBuddy and VirtualBuddy.",
               "job_title": "Mac Developer / Security Researcher at Best Buddy Apps",
               "links": [
@@ -166,7 +166,7 @@
             {
               "id": 77,
               "name": "Yoshimasa Niwa",
-              "image_name": "yoshimasa_niwa"
+              "image_url": "https://tryswift.jp/images/from_app/yoshimasa_niwa.png"
             }
           ]
         }
@@ -185,7 +185,7 @@
             {
               "id": 83,
               "name": "noppe",
-              "image_name": "noppe",
+              "image_url": "https://tryswift.jp/images/from_app/noppe.png",
               "bio": "iOS & visionOS app developer in Japan. Crafting 𝙫𝙚𝙖𝙧 and DAWN for mastodon. Loving #foxes.\n\n[vear - Anime Avatar Camera](https://apps.apple.com/jp/app/vear-anime-avatar-camera/id1490697369?l=en-US)\n[DAWN for Mastodon](https://apps.apple.com/jp/app/dawn-for-mastodon/id1668645019?l=en-US)",
               "job_title": "iOS Engineer at DeNA Co., Ltd.",
               "links": [
@@ -206,7 +206,7 @@
             {
               "id": 8,
               "name": "Gui Rambo",
-              "image_name": "gui_rambo"
+              "image_url": "https://tryswift.jp/images/from_app/gui_rambo.png"
             }
           ]
         }
@@ -225,7 +225,7 @@
             {
               "id": 15,
               "name": "kishikawa katsumi",
-              "image_name": "kishikawa_katsumi",
+              "image_url": "https://tryswift.jp/images/from_app/kishikawa_katsumi.png",
               "bio": "Katsumi has been developing software for the Apple platform for over 10 years and currently works for a company that develops low-code platforms. He works on automating all kinds of tasks. In his spare time, he builds and maintains various open source projects that improve developer productivity.",
               "job_title": "Software Engineer",
               "links": [
@@ -258,7 +258,7 @@
             {
               "id": 85,
               "name": "Kishikawa Katsumi",
-              "image_name": "kishikawa_katsumi"
+              "image_url": "https://tryswift.jp/images/from_app/kishikawa_katsumi.png"
             }
           ]
         }
@@ -277,7 +277,7 @@
             {
               "id": 1,
               "name": "Konrad 'ktoso' Malawski",
-              "image_name": "konrad_ktoso_malawski",
+              "image_url": "https://tryswift.jp/images/from_app/konrad_ktoso_malawski.png",
               "bio": "Konrad works in the Swift language team at Apple, where he focuses on concurrency and distributed modules of the language, and server-side focused libraries. He was part of the design and implementation of Swift’s structured concurrency and actor model, as well as the distributed actors language feature and cluster library. Currently he's focused on Swift/Java interoperability efforts. Previously, he worked on Akka at Lightbend/Typesafe, where he maintained core pieces of the ecosystem, including the clustering, event sourcing, streaming and HTTP libraries. He also is a Java Champion and made significant contributions to the reactive-streams specification and TCK which later became the foundation of the JDK’s java.util.concurrent.Flow types.",
               "job_title": "Swift Language Team",
               "links": [
@@ -312,7 +312,7 @@
             {
               "id": 93,
               "name": "rockname",
-              "image_name": "rockname",
+              "image_url": "https://tryswift.jp/images/from_app/rockname.png",
               "bio": "I'm an iOS and Android app developer working on a banking and card payment service at SmartBank.",
               "job_title": "Mobile Application Developer at SmartBank, Inc.",
               "links": []
@@ -328,7 +328,7 @@
             {
               "id": 1,
               "name": "Konrad 'ktoso' Malawski",
-              "image_name": "konrad_ktoso_malawski"
+              "image_url": "https://tryswift.jp/images/from_app/konrad_ktoso_malawski.png"
             }
           ]
         }
@@ -359,7 +359,7 @@
             {
               "id": 97,
               "name": "Pradnya Nikam",
-              "image_name": "pradnya_nikam",
+              "image_url": "https://tryswift.jp/images/from_app/pradnya_nikam.png",
               "bio": "With over 12 years of experience developing for Apple platforms, I am passionate about creating exceptional user experiences. I have a strong background in UIKit, and these days, I primarily focus on coding SwiftUI views for iOS and tvOS apps. I currently work at Rakuten Viki, a video streaming company with over a million active users per day.\n\nI absolutely love attending conferences and public speaking, sharing my knowledge and learning from the community. Outside of work, you can find me planning my next travel adventure or running around with my 3-year-old.",
               "job_title": "Senior iOS Developer at Rakuten Viki",
               "links": [
@@ -380,7 +380,7 @@
             {
               "id": 93,
               "name": "rockname",
-              "image_name": "rockname"
+              "image_url": "https://tryswift.jp/images/from_app/rockname.png"
             }
           ]
         }
@@ -399,7 +399,7 @@
             {
               "id": 99,
               "name": "ojun",
-              "image_name": "ojun",
+              "image_url": "https://tryswift.jp/images/from_app/ojun.png",
               "bio": "I develop iOS apps at DeNA Co., Ltd. My native language is Swift.",
               "job_title": "iOS App Developer",
               "links": []
@@ -415,7 +415,7 @@
             {
               "id": 97,
               "name": "Pradnya Nikam",
-              "image_name": "pradnya_nikam"
+              "image_url": "https://tryswift.jp/images/from_app/pradnya_nikam.png"
             }
           ]
         }
@@ -434,7 +434,7 @@
             {
               "id": 3,
               "name": "Krzysztof Zablocki",
-              "image_name": "krzysztof_zablocki",
+              "image_url": "https://tryswift.jp/images/from_app/krzysztof_zablocki.png",
               "bio": "Krzysztof is shaping the future of Apple platforms with tools adopted by 80K+ teams, from Apple to Disney. 🏆 2x Engineering Emmy winner, co-founder of Pixle, and creator of Foldify & Sourcery for Xcode.",
               "job_title": "Principal Swift Engineer",
               "links": [
@@ -481,7 +481,7 @@
             {
               "id": 101,
               "name": "Krzysztof Zabłocki",
-              "image_name": "krzysztof_zablocki"
+              "image_url": "https://tryswift.jp/images/from_app/krzysztof_zablocki.png"
             }
           ]
         }

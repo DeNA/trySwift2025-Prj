@@ -40,7 +40,7 @@
             {
               "id": 37,
               "name": "Mikaela Caron",
-              "image_name": "mikaela_caron",
+              "image_url": "https://tryswift.jp/images/from_app/mikaela_caron.png",
               "bio": "Mikaela Caron is an independent iOS Engineer who actively shares her expertise on social media, focusing on iOS development, building apps in public, and freelancing. She’s continuing to work on her indie app Fruitful, which helps people connect with others at conferences, while also traveling as much as she can. She’s also an organizer for iOSDevHappyHour and loves giving back to the community.",
               "jobTitle": "Indie iOS Developer",
               "links": [
@@ -67,7 +67,7 @@
             {
               "id": 39,
               "name": "UJ Cheng",
-              "image_name": "yj_cheng",
+              "image_url": "https://tryswift.jp/images/from_app/yj_cheng.png",
               "bio": "Advanced Software Engineer at Garmin. 10 years of iOS development experience since college. Love solving the LeetCode problems with Swift.",
               "jobTitle": "Advanced Software Engineer at Garmin",
               "links": [
@@ -88,7 +88,7 @@
             {
               "id": 37,
               "name": "Mikaela Caron",
-              "image_name": "mikaela_caron"
+              "image_url": "https://tryswift.jp/images/from_app/mikaela_caron.png"
             }
           ]
         }
@@ -107,7 +107,7 @@
             {
               "id": 41,
               "name": "Michael Petrie",
-              "image_name": "michael_petrie",
+              "image_url": "https://tryswift.jp/images/from_app/michael_petrie.png",
               "bio": "I'm a New Zealander who has been living in Japan for the past 10 years. I primarily work with low level, real time graphics and audio. This year, I founded a company called kapsy.io, and am currently working on a real time generative music sequencer with the code named _Variations_.",
               "jobTitle": "Programmer at ZOZO, Inc",
               "links": [
@@ -146,7 +146,7 @@
             {
               "id": 45,
               "name": "Andrew Zheng",
-              "image_name": "andrew_zheng",
+              "image_url": "https://tryswift.jp/images/from_app/andrew_zheng.png",
               "bio": "Hi, I’m Andrew coming from San Francisco! and I like making apps. This is my second time in Japan, excited to be here. よろしくお願いします！",
               "jobTitle": "iOS Developer at xAI",
               "links": [
@@ -167,7 +167,7 @@
             {
               "id": 41,
               "name": "Michael Petrie",
-              "image_name": "michael_petrie"
+              "image_url": "https://tryswift.jp/images/from_app/michael_petrie.png"
             }
           ]
         }
@@ -186,7 +186,7 @@
             {
               "id": 47,
               "name": "Jeffrey Bergier",
-              "image_name": "jeffrey_bergier",
+              "image_url": "https://tryswift.jp/images/from_app/jeffrey_bergier.png",
               "bio": "Cocoa Developer and Teacher. Love technology and cars. Working in the automotive software industry. Living in Tokyo.\nCompany: Woven by Toyota - This talk is not affiliated with my employer in any way.\nGitHub: [@jeffreybergier](https://github.com/jeffreybergier)\nMastodon: [@jeff](https://jeffburg.social/@jeff)",
               "jobTitle": "Quality Assurance Engineer",
               "links": [
@@ -207,7 +207,7 @@
             {
               "id": 45,
               "name": "Andrew Zheng",
-              "image_name": "andrew_zheng",
+              "image_url": "https://tryswift.jp/images/from_app/andrew_zheng.png",
               "bio": "Hi, I’m Andrew coming from San Francisco! and I like making apps. This is my second time in Japan, excited to be here. よろしくお願いします！",
               "jobTitle": "iOS Developer at xAI",
               "links": [
@@ -234,7 +234,7 @@
             {
               "id": 49,
               "name": "Ryo Igarashi",
-              "image_name": "ryo_igarashi",
+              "image_url": "https://tryswift.jp/images/from_app/ryo_igarashi.png",
               "bio": "Software Engineer at newmo, Inc.",
               "jobTitle": "Engineer@newmo, Inc.",
               "links": []
@@ -262,7 +262,7 @@
             {
               "id": 49,
               "name": "Ryo Igarashi",
-              "image_name": "ryo_igarashi"
+              "image_url": "https://tryswift.jp/images/from_app/ryo_igarashi.png"
             }
           ]
         }
@@ -281,7 +281,7 @@
             {
               "id": 89,
               "name": "Paul Hudson",
-              "image_name": "paul_hudson",
+              "image_url": "https://tryswift.jp/images/from_app/paul_hudson.png",
               "bio": "Paul is the author of Hacking with Swift, Pro Swift, Swift Design Patterns, Testing Swift, Swift Interview Challenges, and more. Suffice it to say, he quite likes Swift. And coffee. (But mostly Swift.) (And coffee.)",
               "job_title": "Creator at Hacking with Swift",
               "links": [
@@ -298,7 +298,7 @@
             {
               "id": 90,
               "name": "Mikaela Caron",
-              "image_name": "mikaela_caron",
+              "image_url": "https://tryswift.jp/images/from_app/mikaela_caron.png",
               "bio": "Mikaela Caron is an independent iOS Engineer who actively shares her expertise on social media, focusing on iOS development, building apps in public, and freelancing. She's continuing to work on her indie app Fruitful, which helps people connect with others at conferences, while also traveling as much as she can. She's also an organizer for iOSDevHappyHour and loves giving back to the community.",
               "job_title": "Indie iOS Developer",
               "links": [
@@ -325,7 +325,7 @@
             {
               "id": 53,
               "name": "Si Beaumont",
-              "image_name": "si_beaumont",
+              "image_url": "https://tryswift.jp/images/from_app/si_beaumont.png",
               "bio": "Si works at Apple, where he helps maintain a number of open-source Swift libraries to support server-side use cases. Before that, he’s worked in a wide range of areas including virtulalization, cloud technologies, privacy-preserving machine learning, and developer tools. \n\nSi is based in Cambridge, UK, but loves to travel and see new places. He’s hugely passionate about coffee and enjoys playing bass guitar.",
               "jobTitle": "Software Engineer @ Apple",
               "links": [
@@ -352,7 +352,7 @@
             {
               "id": 55,
               "name": "tochi",
-              "image_name": "tochi",
+              "image_url": "https://tryswift.jp/images/from_app/tochi.png",
               "bio": "I am an engineer/developer specializing in iOS and visionOS. I have created numerous personal apps, including “Large Contacts” for iOS and “Good Sleeper 360” for visionOS. I’ve authored several technical books, such as Slack & Zoom & Trello Basics + Tips for Telework (in the できるfit series) and What We Wanted to Know About Alexa, and more recently, The Path to Becoming a visionOS Developer. I have received many accolades, including the Mashup Award and top honors in contests organized by Japan’s Ministry of Internal Affairs and Communications, as well as multiple awards in SPAJAM and other hackathons. I have spoken at various events like JAWS Festa and Alexa Day, and I currently share insights on visionOS through social media.",
               "jobTitle": "Software engineer",
               "links": [
@@ -373,7 +373,7 @@
             {
               "id": 53,
               "name": "Si Beaumont",
-              "image_name": "si_beaumont"
+              "image_url": "https://tryswift.jp/images/from_app/si_beaumont.png"
             }
           ]
         }
@@ -416,7 +416,7 @@
             {
               "id": 61,
               "name": "Kosala Jayasekara",
-              "image_name": "kosala_jayasekara",
+              "image_url": "https://tryswift.jp/images/from_app/kosala_jayasekara.png",
               "bio": "I have completed more than a decade long experience in the field of futuristic developments and managed to gain a  portfolio of local and international clientele while working with prominent corporate entities in Sri Lanka.\n\nCurrently serving as the Chief Technology Officer for Fixel Digital which is a development house specifically for Mobile application developments . it's a pleasure that I am well known for my Punctuality, Attention to detail, and innovative mindset among the clients and the industry that I am being with\n\nI have started iOS Development in its early development stage in 2011. I have been in the apple ecosystem for more than a decade now, also Delivered more than 55+ Apps, including iOS, macOS, tvOS, and watchOS. At the same time, I am serving my knowledge to Students in the IT industry and providing consultation services to my clients from overseas.",
               "job_title": "Head of Development @ Fixel Digital",
               "links": [
@@ -437,7 +437,7 @@
             {
               "id": 55,
               "name": "tochi",
-              "image_name": "tochi"
+              "image_url": "https://tryswift.jp/images/from_app/tochi.png"
             }
           ]
         }
@@ -456,7 +456,7 @@
             {
               "id": 63,
               "name": "yamaken",
-              "image_name": "yamaken",
+              "image_url": "https://tryswift.jp/images/from_app/yamaken.png",
               "bio": "I usually develop iOS apps at LY Corporation and actively output through blogging and speaking engagements. Last year, I spoke 13 times.",
               "job_title": "iOS Developer at LY Corporation",
               "links": [
@@ -477,7 +477,7 @@
             {
               "id": 61,
               "name": "Kosala Jayasekara",
-              "image_name": "kosala_jayasekara",
+              "image_url": "https://tryswift.jp/images/from_app/kosala_jayasekara.png",
               "bio": "I have completed more than a decade long experience in the field of futuristic developments and managed to gain a  portfolio of local and international clientele while working with prominent corporate entities in Sri Lanka.\n\nCurrently serving as the Chief Technology Officer for Fixel Digital which is a development house specifically for Mobile application developments . it's a pleasure that I am well known for my Punctuality, Attention to detail, and innovative mindset among the clients and the industry that I am being with\n\nI have started iOS Development in its early development stage in 2011. I have been in the apple ecosystem for more than a decade now, also Delivered more than 55+ Apps, including iOS, macOS, tvOS, and watchOS. At the same time, I am serving my knowledge to Students in the IT industry and providing consultation services to my clients from overseas.",
               "jobTitle": "Head of Development @ Fixel Digital",
               "links": [
@@ -504,7 +504,7 @@
             {
               "id": 65,
               "name": "Satoshi Hattori",
-              "image_name": "satoshi_hattori",
+              "image_url": "https://tryswift.jp/images/from_app/satoshi_hattori.png",
               "bio": "Belongs to Cyber AI Productions. XR Expert at Cyber Agent.\nResponsible for system development related to XR and studio shooting.\nPurchased Apple Vision Pro locally on its U.S. release day. Actively engaged in development and research, including the visionOS 30 Days project.\nOrganizer of the visionOS Engineer Meetup. Published a book on visionOS app development.\nHas spoken at iOSDC for nine consecutive years, as well as at try! Swift Tokyo, XR Kaigi, Let’s visionOS, AWE USA, and more.\nMainly shares updates on X, so please follow!",
               "jobTitle": "XR Engineer at Cyber AI Productions",
               "links": [
@@ -543,7 +543,7 @@
             {
               "id": 65,
               "name": "Satoshi Hattori",
-              "image_name": "satoshi_hattori"
+              "image_url": "https://tryswift.jp/images/from_app/satoshi_hattori.png"
             }
           ]
         }
