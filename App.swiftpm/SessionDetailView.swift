@@ -12,10 +12,9 @@ struct SessionDetailView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Text("タイトル:").padding()
-                Text(session.title)
-            }
+            Text(session.title)
+                .font(.title)
+                .padding()
             
             HStack {
                 Text("登壇者:").padding()
