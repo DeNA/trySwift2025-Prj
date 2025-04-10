@@ -19,10 +19,19 @@ struct SessionDetailView: View {
             
             HStack {
                 Text("登壇者:").padding()
-                Text(session.speakers?.first?.name ?? "なし")
+                Text(session.speakers?.compactMap(\.name).joined(separator: ", ") ?? "なし")
                 // Please add Job-Title
                 
                 Spacer()
+            }
+            
+            // TODO: UIをきれいにしてください！！
+            if let speakers = session.speakers {
+                HStack {
+                    Text("登壇者の概要:")
+                    
+                    Text(speakers.compactMap(\.bio).joined(separator: "\n"))
+                }
             }
             
             HStack {
