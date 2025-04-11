@@ -88,7 +88,7 @@ struct DropdownSelectableTimetableView: View {
             }
             .sheet(isPresented: $isLicenseViewPresented) {
                 NavigationStack {
-                    LicenseListView()
+                    InfoView()
                 }
             }
             .onChange(of: selectedDayNumber) { newValue in
