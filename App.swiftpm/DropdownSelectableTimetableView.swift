@@ -112,6 +112,14 @@ struct DropdownSelectableTimetableView: View {
                     selectedDayTimetable = timetables[newValue]
                 }
                 .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                            .padding(.top, 8)
+                            .frame(width: 180)
+                    }
+
                     ToolbarItem(placement: .topBarLeading) {
                         ZStack {
                             HStack {
