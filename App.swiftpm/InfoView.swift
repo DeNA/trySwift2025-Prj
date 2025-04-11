@@ -6,6 +6,21 @@ struct InfoView: View {
         List {
             Section {
                 VStack(alignment: .center) {
+                    
+                    if isSecreteMode {
+                        AsyncImage(
+                            url: URL(string: "https://pbs.twimg.com/profile_images/1893540152816873473/zqkOZqxS_400x400.jpg"),
+                            content: {
+                                $0.resizable()
+                            },
+                            placeholder: {
+                            Circle().fill(Color.gray)
+                        }).frame(
+                            width: 100,
+                            height: 100
+                        ).mask(Circle())
+                    }
+                    
                     Text(isSecreteMode ? "Hello this is matsuji!" : "try! Swift 2025, DeNA Booth App!")
                         .bold()
                         .font(.title3)
