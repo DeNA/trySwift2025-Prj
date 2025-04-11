@@ -116,7 +116,7 @@ struct DropdownSelectableTimetableView: View {
                         Image("logo")
                             .resizable()
                             .scaledToFit()
-                            .padding(.top, 8)
+                            .padding(.vertical, 8)
                             .frame(width: 180)
                     }
 
