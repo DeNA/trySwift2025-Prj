@@ -18,7 +18,8 @@ struct SessionDetailView: View {
                     .font(.title.bold())
                     .padding()
                     .multilineTextAlignment(.leading)
-                //TODO: 開始から終了時間を入れて欲しい
+                //TODO: 開始時間のレイアウトをいい感じにしてほしい
+                //TODO: セッションのステータスも入れませんか？
                 VStack(alignment: .leading, spacing: 4) {
                     Text(schedule.formattedDate)
                     // 終了時間をいい感じに誰か実装して
