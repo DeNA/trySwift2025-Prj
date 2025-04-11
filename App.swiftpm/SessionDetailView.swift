@@ -17,7 +17,7 @@ struct SessionDetailView: View {
                     .font(.title.bold())
                     .padding()
                     .multilineTextAlignment(.leading)
-
+                //TODO: 開始から終了時間を入れて欲しい
                 VStack(alignment: .leading, spacing: 4) {
                     ForEach(session.speakers ?? []) { speaker in
                         HStack {
@@ -48,7 +48,7 @@ struct SessionDetailView: View {
                 // TODO: UIをきれいにしてください！！
                 if let speakers = session.speakers {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(speakers.compactMap(\.bio).joined(separator: "\n"))
+                        Text(.init(speakers.compactMap(\.bio).joined(separator: "\n")))
                     }
                     .padding(8)
                 }
