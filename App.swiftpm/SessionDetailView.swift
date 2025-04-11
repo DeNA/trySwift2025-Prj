@@ -21,6 +21,12 @@ struct SessionDetailView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     // TODO: Speakerのアイコン画像を出して欲しい
                     if let speakers = session.speakers {
+                        Text(speakers.compactMap(\.imageURL).map(\.absoluteString).joined(separator: ","))
+                        // TODO: いい感じに画像調節してください
+                        ForEach(speakers.compactMap(\.imageURL)) { url in
+                            AsyncImage(url: url)
+                                .frame(maxWidth: 300)
+                        }
                         Text(speakers.compactMap(\.name).joined(separator: ", ") ?? "なし")
                                 .font(.title2.bold())
                         Text(speakers.compactMap(\.jobTitle).joined(separator: ", "))
@@ -82,6 +88,10 @@ struct SessionDetailView: View {
             }
         }
     }
+}
+
+extension URL: @retroactive Identifiable {
+    public var id: String { self.absoluteString }
 }
 
 //#Preview {
