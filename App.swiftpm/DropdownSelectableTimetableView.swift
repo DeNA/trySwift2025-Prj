@@ -11,14 +11,25 @@ struct TimetableListItem: View {
     let session: Session
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(session.title)
-                .font(.headline)
-            if let speakerName = session.speakers?.first?.name {
-                Text("by \(speakerName)")
-                    .font(.subheadline.italic())
+        HStack{
+            //TODO: 複数人のスピーカーに対応してください
+            if let imageURL = session.speakers?.first?.imageURL {
+                AsyncImage(url: imageURL){ image in
+                    image.resizable()
+                } placeholder: {
+                    Color.gray
+                }.frame(width: 60, height: 60)
+                    .clipShape(.circle)
             }
-
+            VStack(alignment: .leading) {
+                Text(session.title)
+                    .font(.headline)
+                if let speakerName = session.speakers?.first?.name {
+                    Text("by \(speakerName)")
+                        .font(.subheadline.italic())
+                }
+                
+            }
         }
     }
 }
