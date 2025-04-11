@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SessionDetailView: View {
     let session: Session
+    let schedule: Schedule
     
     var body: some View {
         ScrollView {
@@ -19,6 +20,8 @@ struct SessionDetailView: View {
                     .multilineTextAlignment(.leading)
                 //TODO: 開始から終了時間を入れて欲しい
                 VStack(alignment: .leading, spacing: 4) {
+                    Text(schedule.formattedDate)
+                    // 終了時間をいい感じに誰か実装して
                     ForEach(session.speakers ?? []) { speaker in
                         HStack {
                             AsyncImage(url: speaker.imageURL) { image in

@@ -32,7 +32,7 @@ struct TimetableList: View {
                 Section {
                     ForEach(schedule.sessions) { session in
                         NavigationLink {
-                            SessionDetailView(session: session)
+                            SessionDetailView(session: session, schedule: schedule) // FIXME: イケてる引数にして
                         } label: {
                             TimetableListItem(session: session)
                             .opacity(schedule.hasEnded ? 0.5 : 1)
