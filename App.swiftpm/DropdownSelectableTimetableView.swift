@@ -12,21 +12,26 @@ struct TimetableListItem: View {
 
     var body: some View {
         HStack{
-            //TODO: 複数人のスピーカーに対応してください
-            if let imageURL = session.speakers?.first?.imageURL {
-                AsyncImage(url: imageURL){ image in
-                    image.resizable()
-                } placeholder: {
-                    Color.gray
-                }.frame(width: 60, height: 60)
-                    .clipShape(.circle)
+            if let speakers = session.speakers {
+                ForEach(speakers) { speaker in
+                    AsyncImage(url: speaker.imageURL){ image in
+                        image.resizable()
+                    } placeholder: {
+                        Color.gray
+                    }.frame(width: 60, height: 60)
+                        .clipShape(.circle)
+                }
             }
             VStack(alignment: .leading) {
                 Text(session.title)
                     .font(.headline)
-                if let speakerName = session.speakers?.first?.name {
-                    Text("by \(speakerName)")
-                        .font(.subheadline.italic())
+                if let speakers = session.speakers {
+                    ForEach(speakers) { speaker in
+                        if let speakerName = speaker.name {
+                            Text("by \(speakerName)")
+                                .font(.subheadline.italic())
+                        }
+                    }
                 }
                 
             }
