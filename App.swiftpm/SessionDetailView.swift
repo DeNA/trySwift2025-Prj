@@ -19,17 +19,28 @@ struct SessionDetailView: View {
                     .multilineTextAlignment(.leading)
 
                 VStack(alignment: .leading, spacing: 4) {
-                    // TODO: Speakerのアイコン画像を出して欲しい
-                    if let speakers = session.speakers {
-                        Text(speakers.compactMap(\.imageURL).map(\.absoluteString).joined(separator: ","))
-                        // TODO: いい感じに画像調節してください
-                        ForEach(speakers.compactMap(\.imageURL)) { url in
-                            AsyncImage(url: url)
-                                .frame(maxWidth: 300)
+                    ForEach(session.speakers ?? []) { speaker in
+                        HStack {
+                            AsyncImage(url: speaker.imageURL) { image in
+                                switch image {
+                                case .success(let image):
+                                    image
+                                        .resizable()
+                                        .frame(width: 60, height: 60)
+                                        .cornerRadius(30)
+                                default:
+                                    EmptyView()
+                                }
+                                // FIXME: これ入れるとビルドが固まっちゃう
+//                            } placeholder: {
+//                                ProgressView()
+//                                    .frame(width: 60, height: 60)
+                            }
+                            VStack(alignment: .leading) {
+                                Text(speaker.name ?? "No name")
+                                Text(speaker.jobTitle ?? "No job")
+                            }
                         }
-                        Text(speakers.compactMap(\.name).joined(separator: ", ") ?? "なし")
-                                .font(.title2.bold())
-                        Text(speakers.compactMap(\.jobTitle).joined(separator: ", "))
                     }
                 }
                 .padding(8)
@@ -41,7 +52,6 @@ struct SessionDetailView: View {
                     }
                     .padding(8)
                 }
-                
                 
                 VStack(alignment: .leading, spacing: 4) {
                     Text("会場:")
