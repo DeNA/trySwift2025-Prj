@@ -25,21 +25,7 @@ struct SessionDetailView: View {
                     // 終了時間をいい感じに誰か実装して
                     ForEach(session.speakers ?? []) { speaker in
                         HStack {
-                            AsyncImage(url: speaker.imageURL) { image in
-                                switch image {
-                                case .success(let image):
-                                    image
-                                        .resizable()
-                                        .frame(width: 60, height: 60)
-                                        .cornerRadius(30)
-                                default:
-                                    EmptyView()
-                                }
-                                // FIXME: これ入れるとビルドが固まっちゃう
-//                            } placeholder: {
-//                                ProgressView()
-//                                    .frame(width: 60, height: 60)
-                            }
+                            profileImageView(speaker: speaker)
                             VStack(alignment: .leading) {
                                 Text(speaker.name ?? "No name")
                                 Text(speaker.jobTitle ?? "No job")
@@ -102,7 +88,27 @@ struct SessionDetailView: View {
             }
         }
     }
+    
+    private func profileImageView(speaker: Speaker) -> some View {
+        AsyncImage(url: speaker.imageURL) { imagePhase in
+            switch imagePhase {
+            case .success(let image):
+                image
+                    .resizable()
+            case .empty:
+                Color.gray
+            case .failure:
+                EmptyView()
+            @unknown default:
+                EmptyView()
+            }
+        }
+        .frame(width: 60, height: 60)
+        .clipShape(.circle)
+    }
 }
+
+
 
 extension URL: @retroactive Identifiable {
     public var id: String { self.absoluteString }
