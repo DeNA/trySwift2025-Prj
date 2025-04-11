@@ -48,7 +48,11 @@ struct TimetableList: View {
                 Section {
                     ForEach(schedule.sessions) { session in
                         NavigationLink {
-                            SessionDetailView(session: session, schedule: schedule) // FIXME: イケてる引数にして
+                            SessionDetailView(
+                                session: session,
+                                sessionStatus: timetable?.getSessionStatus(for: schedule.id),
+                                schedule: schedule
+                            ) // FIXME: イケてる引数にして
                         } label: {
                             TimetableListItem(session: session)
                                 .opacity(schedule.hasEnded ? 0.5 : 1)
@@ -57,7 +61,7 @@ struct TimetableList: View {
                     }
                 } header: {
                     HStack {
-                        Text(schedule.formattedDate)
+                        Text(schedule.formattedDateString)
                         Text(timetable?.getSessionStatus(for: schedule.id)?.description ?? "")
                     }
                 }

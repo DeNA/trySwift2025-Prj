@@ -10,6 +10,7 @@ import Foundation
 
 struct Schedule: Decodable, Identifiable {
     let id: Int
+    //TODO: JSONから取る時にDateにする
     let time: String
     let sessions: [Session]
 }
@@ -22,10 +23,14 @@ extension Schedule {
         return RFC3339DateFormatter.date(from: time)
     }
     
-    var formattedDate: String {
+    var formattedDateString: String {
         guard let date else { return "Invalid Date" }
         
-        return date.formatted()
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        return formatter.string(from: date)
     }
     
     var hasEnded: Bool {

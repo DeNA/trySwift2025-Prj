@@ -9,38 +9,50 @@ import SwiftUI
 
 struct SessionDetailView: View {
     let session: Session
+    let sessionStatus: SessionStatus?
     let schedule: Schedule
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 12) {
                 Text(session.title)
                     .font(.title.bold())
-                    .padding()
                     .multilineTextAlignment(.leading)
+                
+                Text(sessionStatus?.description ?? "")
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 8)
+                    .background {
+                        RoundedRectangle(
+                            cornerSize: .init(width: 40, height: 40)
+                        )
+                        .foregroundStyle(sessionStatus?.backgroundColor ?? .black)
+                    }
+                
                 //TODO: 開始時間のレイアウトをいい感じにしてほしい
-                //TODO: セッションのステータスも入れませんか？
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(schedule.formattedDate)
+                VStack(alignment: .leading, spacing: 16) {
+                    Text(schedule.formattedDateString)
+                        .font(.caption)
                     // 終了時間をいい感じに誰か実装して
                     ForEach(session.speakers ?? []) { speaker in
                         HStack {
                             profileImageView(speaker: speaker)
                             VStack(alignment: .leading) {
                                 Text(speaker.name ?? "No name")
+                                    .font(.headline)
                                 Text(speaker.jobTitle ?? "No job")
+                                    .font(.caption2)
                             }
                         }
                     }
                 }
-                .padding(8)
                 
                 // TODO: UIをきれいにしてください！！
                 if let speakers = session.speakers {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(.init(speakers.compactMap(\.bio).joined(separator: "\n")))
                     }
-                    .padding(8)
                 }
                 
                 VStack(alignment: .leading, spacing: 4) {
@@ -50,7 +62,7 @@ struct SessionDetailView: View {
                     
                     Spacer()
                 }
-                .padding(8)
+
                 if #available(iOS 17.0, *) {
                     Group {
                         if let summary = session.summary {
@@ -68,24 +80,20 @@ struct SessionDetailView: View {
                                 Text("このセッションには概要がありません")
                             }
                         }
-                    }.padding(.horizontal, 8)
+                    }
                     
                 } else {
                     HStack {
                         // Fallback on earlier versions
-                        Text("概要:").padding()
-                        if let summary = session.summary {
-                            Text(summary)
-                                .padding(.horizontal, 16.0)
-                        } else {
-                            Text("なし")
-                        }
+                        Text("概要:")
                         
+                        Text(session.summary ?? "なし")
                     }
                 }
                 
                 Spacer()
             }
+            .padding()
         }
     }
     

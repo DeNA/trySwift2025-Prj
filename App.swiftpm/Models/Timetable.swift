@@ -40,20 +40,3 @@ extension Timetable {
         }
     }
 }
-
-enum SessionStatus {
-    case preparing
-    case ongoing
-    case finished
-    
-    var description: String {
-        switch self {
-        case .preparing:
-            "準備中"
-        case .ongoing:
-            "進行中"
-        case .finished:
-            "終了"
-        }
-    }
-}
