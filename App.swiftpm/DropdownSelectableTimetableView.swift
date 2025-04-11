@@ -11,14 +11,13 @@ struct TimetableListItem: View {
     let session: Session
 
     var body: some View {
-        // FIXME: タイムテーブルの中身が表示されません。
         VStack(alignment: .leading) {
-//            Text(session.title)
-//                .font(.headline)
-//            if let speakerName = session.speakers?.first?.name {
-//                Text("by \(speakerName)")
-//                    .font(.subheadline.italic())
-//            }
+            Text(session.title)
+                .font(.headline)
+            if let speakerName = session.speakers?.first?.name {
+                Text("by \(speakerName)")
+                    .font(.subheadline.italic())
+            }
 
         }
     }
@@ -63,7 +62,6 @@ struct DropdownSelectableTimetableView: View {
     }
     
     var body: some View {
-        // FIXME:アプリ起動時の選択が行われていない。
         NavigationStack {
             TimetableList(timetable: selectedDayTimetable)
             .onAppear {
@@ -86,6 +84,7 @@ struct DropdownSelectableTimetableView: View {
                 }
                 
                 self.timetables = timetables
+                selectedDayTimetable = timetables[selectedDayNumber]
             }
             .sheet(isPresented: $isLicenseViewPresented) {
                 NavigationStack {
