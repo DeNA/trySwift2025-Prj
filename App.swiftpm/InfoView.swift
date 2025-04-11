@@ -1,13 +1,15 @@
 import SwiftUI
 
 struct InfoView: View {
-    @State var isSecreteMode = false
+    @State var isSecretMode = false
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         List {
             Section {
                 VStack(alignment: .center) {
                     
-                    if isSecreteMode {
+                    if isSecretMode {
                         AsyncImage(
                             url: URL(string: "https://pbs.twimg.com/profile_images/1893540152816873473/zqkOZqxS_400x400.jpg"),
                             content: {
@@ -21,15 +23,15 @@ struct InfoView: View {
                         ).mask(Circle())
                     }
                     
-                    Text(isSecreteMode ? "Hello this is matsuji!" : "try! Swift 2025, DeNA Booth App!")
+                    Text(isSecretMode ? "Hello this is matsuji!" : "try! Swift 2025, DeNA Booth App!")
                         .bold()
                         .font(.title3)
                         .multilineTextAlignment(.center)
                         .padding()
                         .onTapGesture(count: 4) {
-                            isSecreteMode.toggle()
+                            isSecretMode.toggle()
                         }
-                    Text(isSecreteMode ? "まつじが乗っ取った": "This app is made by try! Swift attendees!, thank you!!")
+                    Text(isSecretMode ? "まつじが乗っ取った": "This app is made by try! Swift attendees!, thank you!!")
                         .font(.footnote)
                 }
                 .padding()
@@ -42,5 +44,12 @@ struct InfoView: View {
             }
         }
         .navigationTitle("Information")
+        .toolbar {
+            Button {
+                dismiss()
+            } label: {
+                Image(systemName: "xmark")
+            }
+        }
     }
 }
