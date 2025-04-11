@@ -93,6 +93,7 @@ struct SessionDetailView: View {
                 
                 Spacer()
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
         }
     }

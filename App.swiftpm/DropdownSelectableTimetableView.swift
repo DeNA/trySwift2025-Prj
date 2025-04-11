@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TimetableListItem: View {
+struct TimetableListItemView: View {
     let session: Session
     
     var body: some View {
@@ -39,7 +39,7 @@ struct TimetableListItem: View {
     }
 }
 
-struct TimetableList: View {
+struct TimetableListView: View {
     let timetable: Timetable?
     
     var body: some View {
@@ -54,7 +54,7 @@ struct TimetableList: View {
                                 schedule: schedule
                             ) // FIXME: イケてる引数にして
                         } label: {
-                            TimetableListItem(session: session)
+                            TimetableListItemView(session: session)
                                 .opacity(schedule.hasEnded ? 0.5 : 1)
                             
                         }
@@ -84,7 +84,7 @@ struct DropdownSelectableTimetableView: View {
     var body: some View {
         NavigationStack {
             
-            TimetableList(timetable: selectedDayTimetable)
+            TimetableListView(timetable: selectedDayTimetable)
                 .onAppear {
                     var timetables: [Timetable] = []
                     let decoder = JSONDecoder()
