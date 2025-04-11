@@ -90,18 +90,11 @@ struct SessionDetailView: View {
     }
     
     private func profileImageView(speaker: Speaker) -> some View {
-        AsyncImage(url: speaker.imageURL) { imagePhase in
-            switch imagePhase {
-            case .success(let image):
-                image
-                    .resizable()
-            case .empty:
-                Color.gray
-            case .failure:
-                EmptyView()
-            @unknown default:
-                EmptyView()
-            }
+        AsyncImage(url: speaker.imageURL) { image in
+            image
+                .resizable()
+        } placeholder: {
+            Color.gray
         }
         .frame(width: 60, height: 60)
         .clipShape(.circle)
